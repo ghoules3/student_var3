@@ -1,1 +1,1 @@
-print("loader v1: sourceA")
+print("loader v2: sourceC")
