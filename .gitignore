@@ -1,0 +1,21 @@
+# system
+.DS_Store
+*.pyc
+__pycache__/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# venv
+.venv/
+venv/
+env/
+
+# data (сырые и обработанные данные не коммитим)
+data/*
+*.csv
+*.xls*
+*.xlsx
+
+# logs/outputs
+*.log
