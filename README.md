@@ -10,3 +10,17 @@
 - src/ — исходный код (скрипты)
 - notebooks/ — ноутбуки (опционально)
 - docs/ — скриншоты/отчёт
+
+Ветки:
+- main
+- dev
+- feature/data-loader - правки src/loader.py, спровоцирован конфликт при merge в dev
+- feature/requirements - подготовка requirements.txt и демонстрация git stash
+
+Pull Request:
+- dev → main (https://github.com/ghoules3/student_var3/pulls?q=is%3Apr+is%3Aclosed)
+
+Requirements (ML‑стек):
+- numpy, pandas, scikit-learn, matplotlib, seaborn, pyarrow, requests, xgboost
+
+Скриншоты смотреть в папке docs/
