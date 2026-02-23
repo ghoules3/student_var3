@@ -3,7 +3,7 @@
 Студент: Бочков Андрей Александрович, БД251-м
 
 Цель: отработать Git-процессы (ветки, merge-конфликт, stash, PR) и подготовить requirements.txt под ML-стек (финансы/скоринг).  
-Данные: реальный датасет Kaggle "Default of Credit Card Clients" (в data/, в Git не коммитится).
+Данные: датасет Kaggle "Default of Credit Card Clients" (в data/, в Git не коммитится).
 
 Структура:
 - data/ — данные (raw/processed), в Git игнорируется
@@ -17,10 +17,8 @@
 - feature/data-loader - правки src/loader.py, спровоцирован конфликт при merge в dev
 - feature/requirements - подготовка requirements.txt и демонстрация git stash
 
-Pull Request:
-- dev → main (https://github.com/ghoules3/student_var3/pulls?q=is%3Apr+is%3Aclosed)
+Pull request: dev → main (https://github.com/ghoules3/student_var3/pulls?q=is%3Apr+is%3Aclosed)
 
-Requirements (ML‑стек):
-- numpy, pandas, scikit-learn, matplotlib, seaborn, pyarrow, requests, xgboost
+ML‑стек: numpy, pandas, scikit-learn, matplotlib, seaborn, pyarrow, requests, xgboost
 
 Скриншоты смотреть в папке docs/
