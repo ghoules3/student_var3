@@ -8,8 +8,8 @@ screenshots here
 07_stash_pop.jpg - git stash pop
 08_stash.jpg - подтверждение состояния requirements после pop
 09_ssh_remote.jpg - ssh -T git@github.com и git remote -v
-10_push_remote.jpg - пуш веток и git branch -r (origin/main, origin/dev, origin/feature/*)
-11_dev.jpg - коммит/пуш плейсхолдера в dev (для диффа PR)
-12_pr_open.jpg - страница PR dev в main до Merge (base=main, compare=dev)
-13_pr_merged.jpg - страница после Merge PR
-14_main_tree.jpg - Code → main: видны 4 папки (data/.gitkeep, src/, notebooks/.keep, docs/)
+10_push_remote.jpg - пуш веток и git branch -r
+11_dev.jpg - коммит и пуш плейсхолдера в dev
+12_pr_open.jpg - страница PR dev в main до merge
+13_pr_merged.jpg - после merge PR
+14_main_tree.jpg - code в main: видны 4 папки (data/.gitkeep, src/, notebooks/.keep, docs/)
