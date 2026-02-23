@@ -17,7 +17,7 @@
 - feature/data-loader - правки src/loader.py, спровоцирован конфликт при merge в dev
 - feature/requirements - подготовка requirements.txt и демонстрация git stash
 
-Pull request: dev → main (https://github.com/ghoules3/student_var3/pulls?q=is%3Apr+is%3Aclosed)](https://github.com/ghoules3/student_var3/pull/1)
+Pull request: dev → main (https://github.com/ghoules3/student_var3/pull/1)
 
 ML‑стек: numpy, pandas, scikit-learn, matplotlib, seaborn, pyarrow, requests, xgboost
 
