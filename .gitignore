@@ -19,3 +19,6 @@ data/*
 
 # logs/outputs
 *.log
+
+# allow placeholder in data
+!data/.gitkeep
