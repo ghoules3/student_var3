@@ -3,7 +3,7 @@
 Студент: Бочков Андрей Александрович, БД251-м
 
 Цель: отработать Git-процессы (ветки, merge-конфликт, stash, PR) и подготовить requirements.txt под ML-стек (финансы/скоринг).  
-Данные: датасет Kaggle "Default of Credit Card Clients" (в data/, в Git не коммитится).
+Данные: датасет Kaggle "Default of Credit Card Clients" (в data/, в Git не коммитится) https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset.
 
 Структура:
 - data/ — данные (raw/processed), в Git игнорируется
