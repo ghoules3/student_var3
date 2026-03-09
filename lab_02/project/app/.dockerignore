@@ -1,0 +1,24 @@
+# python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.ipynb_checkpoints/
+
+# venv
+venv/
+.env/
+
+# git
+.git/
+.gitignore
+
+# data (не кладём датасеты в образ)
+data/
+*.csv
+*.json
+*.xlsx
+
+# misc
+*.log
+.DS_Store

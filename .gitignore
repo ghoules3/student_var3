@@ -22,3 +22,10 @@ data/*
 
 # allow placeholder in data
 !data/.gitkeep
+
+# secrets
+.env
+
+# lab_02 data (не коммитим датасеты)
+lab_02/project/data/*
+!lab_02/project/data/.gitkeep

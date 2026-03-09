@@ -1,0 +1,61 @@
+# ============================================================
+# Вариант 3 / Credit scoring / Jupyter
+# ============================================================
+
+services:
+  # ---------- 1. База данных PostgreSQL ----------
+  db:
+    image: postgres:16-alpine
+    container_name: credit_db
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    networks:
+      - backend-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # ---------- 2. ETL-загрузчик (init-контейнер) ----------
+  loader:
+    build:
+      context: ./app
+    container_name: credit_loader
+    entrypoint: ["python", "loader.py"]
+    env_file: .env
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./data:/data:ro
+    networks:
+      - backend-network
+
+  # ---------- 3. JupyterLab analytics app ----------
+  analytics_app:
+    build:
+      context: ./app
+    container_name: credit_jupyter
+    env_file: .env
+    depends_on:
+      db:
+        condition: service_healthy
+      loader:
+        condition: service_completed_successfully
+    ports:
+      - "127.0.0.1:8888:8888"
+    networks:
+      - backend-network
+    # рекомендую сразу добавить папку под ноутбуки:
+    volumes:
+      - ./notebooks:/app/notebooks
+
+volumes:
+  pg_data:
+
+networks:
+  backend-network:
+    driver: bridge
