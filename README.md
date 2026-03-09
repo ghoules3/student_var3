@@ -22,3 +22,7 @@ Pull request: dev → main (https://github.com/ghoules3/student_var3/pull/1)
 ML‑стек: numpy, pandas, scikit-learn, matplotlib, seaborn, pyarrow, requests, xgboost
 
 Скриншоты смотреть в папке docs/
+
+## Лабораторная работа 2
+Отчёт: lab_02/README.md  
+Скриншоты: docs/lab_02/
