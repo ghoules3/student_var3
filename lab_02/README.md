@@ -18,6 +18,7 @@
 -Доступ в JupyterLab по токену (переменная `JUPYTER_TOKEN` в `.env`)  
   
 ## Структура проекта  
+```text  
 lab_02/  
 README.md  
     project/  
