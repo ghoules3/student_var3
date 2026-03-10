@@ -33,6 +33,7 @@ README.md
         .gitkeep  
             notebooks/  
             check_db.ipynb  
+```  
 ## Датасет  
 Источник: Kaggle — *Default of Credit Card Clients Dataset*    
 https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset  
