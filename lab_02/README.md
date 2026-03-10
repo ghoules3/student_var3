@@ -75,9 +75,9 @@ http://127.0.0.1:8888
 запрос SELECT COUNT(*) возвращает 30000 строк после загрузки датасета
 
 ## Скриншоты (docs/lab_02)
--`01_up_build.jpg` - `docker compose up -d --build`
--`02_ps.jpg` - `docker compose ps --all`
--`03_loader_logs.jpg` - логи загрузчика
--`04_ports_localhost.jpg` - порт Jupyter проброшен только на `127.0.0.1`
--`05_jupyter.jpg` - интерфейс JupyterLab в браузере
--`06_count_30000.jpg` - запрос `COUNT(*)` в ноутбуке (30000 строк)
+-`01_up_build.jpg` - `docker compose up -d --build`  
+-`02_ps.jpg` - `docker compose ps --all`  
+-`03_loader_logs.jpg` - логи загрузчика  
+-`04_ports_localhost.jpg` - порт Jupyter проброшен только на `127.0.0.1`  
+-`05_jupyter.jpg` - интерфейс JupyterLab в браузере  
+-`06_count_30000.jpg` - запрос `COUNT(*)` в ноутбуке (30000 строк)  
