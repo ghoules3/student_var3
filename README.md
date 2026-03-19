@@ -25,4 +25,8 @@ ML‑стек: numpy, pandas, scikit-learn, matplotlib, seaborn, pyarrow, reques
 
 ## Лабораторная работа 2
 Отчёт: lab_02/README.md  
-Скриншоты: docs/lab_02/
+Скриншоты: docs/lab_02/  
+  
+## Лабораторная работа 3  
+Отчёт: lab_03/README.md  
+Скриншоты: docs/lab_03/  
