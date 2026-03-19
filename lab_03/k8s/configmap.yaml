@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  POSTGRES_DB: "creditdb"
+  POSTGRES_USER: "credit_user"
+  DB_HOST: "db-service"
+  DB_PORT: "5432"
+  CSV_PATH: "/data/UCI_Credit_Card.csv"
+  TABLE_NAME: "credit_default"
+  CSV_SKIPROWS: "0"

@@ -1,0 +1,27 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: data-loader-job
+spec:
+  template:
+    spec:
+      containers:
+        - name: loader
+          image: credit-app:latest
+          imagePullPolicy: Never
+          command: ["python", "/app/loader.py"]
+          envFrom:
+            - configMapRef:
+                name: app-config
+            - secretRef:
+                name: app-secret
+          volumeMounts:
+            - name: csv-data
+              mountPath: /data
+              readOnly: true
+      restartPolicy: OnFailure
+      volumes:
+        - name: csv-data
+          hostPath:
+            path: /mnt/data
+            type: Directory
